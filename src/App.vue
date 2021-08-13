@@ -22,9 +22,9 @@
                 <span>{{ untodolist }}条剩余</span>
                 <!-- 操作按钮 -->
                 <a-button-group>
-                    <a-button :type="viewkey === 'all' ? 'primary': 'default'" @click="changelist('all')">全部</a-button>
-                    <a-button :type="viewkey === 'undone' ? 'primary': 'default'" @click="changelist('undone')">未完成</a-button>
-                    <a-button :type="viewkey === 'done' ? 'primary': 'default'" @click="changelist('done')">已完成</a-button>
+                    <a-button :type="viewkey === 'all' ? 'primary' : 'default'" @click="changelist('all')">全部</a-button>
+                    <a-button :type="viewkey === 'undone' ? 'primary' : 'default'" @click="changelist('undone')">未完成</a-button>
+                    <a-button :type="viewkey === 'done' ? 'primary' : 'default'" @click="changelist('done')">已完成</a-button>
                 </a-button-group>
                 <!-- 把已经完成的任务清空 -->
                 <a @click="cleanDone">清除已完成</a>

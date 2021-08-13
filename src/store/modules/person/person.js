@@ -1,7 +1,8 @@
 const person = {
     namespaced: true,
     state: {
-        person: 'person'
+        person: 'person',
+        age: 18
     },
     mutations: {
         changePerson(state) {
@@ -17,7 +18,7 @@ const person = {
             // 兄弟组件的getter
             const first = context.rootGetters['role/first/getFirstName']
             console.log(first)
-            // 兄弟组件的mutation
+            // 兄弟组件的mutation, 中间的{}应该是传给addName的payload
             context.commit('role/first/addName', {}, { root: true })
             // 兄弟的action
             context.dispatch('role/first/addNameAsync', {}, { root: true })

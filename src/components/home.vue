@@ -28,7 +28,7 @@ export default {
         // ...mapState(['person']),
         // ...mapGetters(['getPerson'])
         // 2
-        ...mapState('role/person', ['person']),
+        ...mapState('role/person', ['person', 'age']), // many
         ...mapGetters('role/person/', ['getPerson']),
         // first
         ...mapState('role/first', ['name']),
